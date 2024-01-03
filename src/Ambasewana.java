@@ -67,8 +67,11 @@ public class Ambasewana extends javax.swing.JFrame {
         jScrollPane2 = new javax.swing.JScrollPane();
         jTable2 = new javax.swing.JTable();
         jPanel7 = new javax.swing.JPanel();
+        jScrollPane5 = new javax.swing.JScrollPane();
+        jTable5 = new javax.swing.JTable();
         jPanel9 = new javax.swing.JPanel();
-        jPanel8 = new javax.swing.JPanel();
+        jScrollPane6 = new javax.swing.JScrollPane();
+        jTable6 = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -303,13 +306,13 @@ public class Ambasewana extends javax.swing.JFrame {
 
         jTable2.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+                {"Rice & Curry", "250.00", null},
+                {"Chicken", "180.00", null},
+                {"Pork", "250.00", null},
+                {null, null, null}
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
+                "Item", "Unit Price(Rs)", "Quantity"
             }
         ));
         jScrollPane2.setViewportView(jTable2);
@@ -317,11 +320,46 @@ public class Ambasewana extends javax.swing.JFrame {
         jPanel1.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 790, 410));
 
         jTabbedPane1.addTab("Breakfast", jPanel1);
+
+        jPanel7.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jTable5.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {"Rice & Curry", "250.00", null},
+                {"Chicken", "180.00", null},
+                {"Pork", "250.00", null},
+                {null, null, null}
+            },
+            new String [] {
+                "Item", "Unit Price(Rs)", "Quantity"
+            }
+        ));
+        jScrollPane5.setViewportView(jTable5);
+
+        jPanel7.add(jScrollPane5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 790, 410));
+
         jTabbedPane1.addTab("Lunch", jPanel7);
+
+        jPanel9.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jTable6.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {"Rice & Curry", "250.00", null},
+                {"Chicken", "180.00", null},
+                {"Pork", "250.00", null},
+                {null, null, null}
+            },
+            new String [] {
+                "Item", "Unit Price(Rs)", "Quantity"
+            }
+        ));
+        jScrollPane6.setViewportView(jTable6);
+
+        jPanel9.add(jScrollPane6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 790, 410));
+
         jTabbedPane1.addTab("Dinner", jPanel9);
 
         getContentPane().add(jTabbedPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 10, 790, 450));
-        getContentPane().add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(1050, -40, -1, -1));
 
         pack();
         setLocationRelativeTo(null);
@@ -433,13 +471,16 @@ public class Ambasewana extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
-    private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane5;
+    private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTable jTable1;
     private javax.swing.JTable jTable2;
+    private javax.swing.JTable jTable5;
+    private javax.swing.JTable jTable6;
     private javax.swing.JButton jbtn0;
     private javax.swing.JButton jbtn1;
     private javax.swing.JButton jbtn2;
